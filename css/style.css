@@ -1,7 +1,17 @@
 *{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #a4acc0;
 }
 
+img{
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+h4{
+  margin-top: 10px;
+  font-weight: 600;
+}
 
 body {
   text-align: center;
@@ -43,15 +53,15 @@ section {
   align-content: center;
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   #jogadorasList, #jogadoresList {
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   #jogadorasList, #jogadoresList {
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 

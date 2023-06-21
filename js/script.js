@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const adicionarDetalhes = (elemento, jogador) => {
     const img = criarElemento('img', { src: jogador.imagem });
-    const nome = criarElemento('h5', { innerHTML: jogador.nome });
+    const nome = criarElemento('h4', { innerHTML: jogador.nome });
     elemento.appendChild(img);
     elemento.appendChild(nome);
     elemento.addEventListener('click', function() {
